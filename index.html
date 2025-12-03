@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>CSS Selectors Demo</title>
+  <style>
+    * { 
+        font-family: Arial;
+     }
+    h2 {
+         color: blue; 
+        }
+    .box {
+        
+        background: lightyellow; padding: 10px;
+     }
+    #special { 
+        background: lightgreen; padding: 10px; 
+    }
+    .parent > p { 
+        color: red;
+     }
+    .one + p { 
+        font-weight: bold;
+     }
+    input:focus {
+        
+        
+        border: 2px solid blue;
+     }
+    .note:active {
+        color: red;
+        background-color: pink;
+
+         }
+
+
+          input[type] {
+            border: 2px solid black;
+        }
+
+           input[type="text"] {
+            background-color: yellow;
+        }	
+
+        
+
+  </style>
+</head>
+<body>
+
+     <input type="text" placeholder="Text input">
+    <input type="number" placeholder="Number input">
+
+
+     <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+
+<h1>CSS Selectors </h1>
+
+<h2>Type Selector</h2>
+<p>This is a normal paragraph.</p>
+
+<h2>Class Selector</h2>
+<div class="box">This uses class selector (.box)</div>
+
+<h2>ID Selector</h2>
+<div id="special">This uses ID selector (#special)</div>
+
+<h2>Child Selector</h2>
+<div class="parent">
+  <p> direct child (red)</p>
+  <span><p> not a direct child</p></span>
+</div>
+
+<h2>Adjacent Sibling Selector</h2>
+<p class="one">First paragraph</p>
+<p>Paragraph after .one (bold)</p>
+
+<h2>Pseudo-class</h2>
+<input placeholder="Click to focus">
+
+<h2>Pseudo-element</h2>
+<p class="note">This line has a prefix.</p>
+
+</body>
+</html>
