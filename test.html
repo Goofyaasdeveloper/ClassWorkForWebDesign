@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-class{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Describe how multimedia elements, hyperlinks, 
+     tables, forms, and lists can be integrated into a 
+     webpage to improve its usability. -->
+
+    <h1>Integrating All HTML elements in webpage to improve usability</h1>
+    <h3>For Audio</h3>
+    <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>For Video:</h3>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<!-- 
+
+For Adding Hyperlinks:
+HTML links are hyperlinks.
+You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand. -->
+<h3>Hyperlinks</h3>
+<a href="https://www.google.com/">Google</a>
+<a  href="https://www.facebook.com/">Facebook</a>
+
+
+
+<!-- Lists -->
+<!-- Unordered List -->
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<!-- Ordered List -->
+
+<ol>
+  <li>Wake up</li>
+  <li>Brush teeth</li>
+  <li>Have breakfast</li>
+</ol>
+
+<!-- Form -->
+<h3>Form</h3>
+<!-- An HTML form is used to collect user input.
+  The user input is most often sent to a server for processing.
+  -->
+
+<!-- The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.  -->
+
+<!-- input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button -->
+
+<form class="form-class" action="/submit_form" method="post">
+        <!-- Name input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Message textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here"></textarea><br><br>
+
+        <!-- Gender radio buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Hobbies checkbox -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+        <label for="traveling">Traveling</label><br>
+        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+</body>
+</html>
